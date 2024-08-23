@@ -1,12 +1,7 @@
+from app.book import Book
 from app.printer import PrinterConsole, PrinterReverse
 from app.serializers import SerializerJson, SerializerXml
 from app.view import DisplayConsole, DisplayReverse
-
-
-class Book:
-    def __init__(self, title: str, content: str):
-        self.title = title
-        self.content = content
 
 
 def main(book: Book, commands: list[tuple[str, str]]) -> None | str:
